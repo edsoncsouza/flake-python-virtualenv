@@ -17,8 +17,17 @@
       in {
         devShell = pkgs.mkShell {
           buildInputs = [
-            pkgs.python3
-            pkgs.python3Packages.virtualenv
+            pkgs.python311Packages.virtualenv
+            pkgs.python311
+            pkgs.python311Packages.pip
+            pkgs.python311Packages.setuptools
+            pkgs.python311Packages.wheel
+            pkgs.python311Packages.tkinter
+            pkgs.ffmpeg
+            pkgs.python311Packages.yt-dlp
+            pkgs.python311Packages.flask
+            pkgs.python311Packages.flask-cors
+            pkgs.python311Packages.flask-socketio
           ];
 
           shellHook = ''
